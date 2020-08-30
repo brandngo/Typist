@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="paneHelp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.brandonngo.typist.controllers.HelpController">
+   <children>
+      <Button fx:id="btnBack" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#bringBack" prefHeight="25.0" prefWidth="25.0">
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+      <StackPane fx:id="stckpPane" alignment="TOP_CENTER" layoutX="200.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0">
+         <children>
+            <ImageView fitHeight="218.0" fitWidth="259.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/fingerplacement.png" />
+               </image>
+               <StackPane.margin>
+                  <Insets top="10.0" />
+               </StackPane.margin>
+            </ImageView>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="While the above image is how you should type normally, the best position is the one that gives you the best results. " textAlignment="CENTER" wrappingWidth="360.921875" StackPane.alignment="BOTTOM_CENTER">
+               <StackPane.margin>
+                  <Insets bottom="30.0" />
+               </StackPane.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Typing is quite simple, yet hard to master. " textAlignment="CENTER" wrappingWidth="356.4453125" StackPane.alignment="CENTER">
+               <StackPane.margin>
+                  <Insets top="110.0" />
+               </StackPane.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+      <ImageView fitHeight="40.0" fitWidth="200.0" layoutX="300.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/linebreak.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

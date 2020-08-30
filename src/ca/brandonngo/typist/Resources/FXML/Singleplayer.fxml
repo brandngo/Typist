@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="paneSingleplayer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.brandonngo.typist.controllers.SingleplayerController">
+   <children>
+      <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="800.0">
+         <children>
+            <ScrollPane id="spWordBox" fx:id="spWordBox" hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="160.0" prefWidth="600.0" vbarPolicy="NEVER" vmax="900.0" StackPane.alignment="TOP_CENTER">
+               <StackPane.margin>
+                  <Insets top="20.0" />
+               </StackPane.margin>
+               <content>
+                  <TextFlow id="tflwWordBox" fx:id="tflwWordBox" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="600.0">
+                     <padding>
+                        <Insets top="-2.0" />
+                     </padding></TextFlow>
+               </content>
+            </ScrollPane>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="500.0" StackPane.alignment="BOTTOM_CENTER">
+               <children>
+                  <TextField id="tfTypeBox" fx:id="tfTypeBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#getWordInput" prefHeight="50.0" prefWidth="370.0">
+                     <font>
+                        <Font name="Arial Bold" size="20.0" />
+                     </font></TextField>
+                  <Label fx:id="lTimer" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="70.0" text="60" textAlignment="CENTER" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Trebuchet MS Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <Button id="btnReset" fx:id="btnReset" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#gameReset" prefHeight="50.0" prefWidth="50.0" text="Reset">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets right="5.0" top="1.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </StackPane>
+      <Pane prefHeight="160.0" prefWidth="800.0" translateY="240.0">
+         <children>
+            <LineChart id="lcGraph" fx:id="lcGraph" layoutX="-8.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="800.0">
+              <xAxis>
+                <NumberAxis forceZeroInRange="false" lowerBound="1.0" minorTickCount="1" minorTickLength="1.0" minorTickVisible="false" side="BOTTOM" tickLabelFill="#49ddc9" tickLabelGap="1.0" tickLength="1.0" tickUnit="1.0" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" tickLabelFill="#49ddc9" />
+              </yAxis>
+            </LineChart>
+         </children>
+      </Pane>
+      <Button fx:id="btnBack" contentDisplay="GRAPHIC_ONLY" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#bringBack" prefHeight="25.0" prefWidth="25.0">
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+   </children>
+</Pane>

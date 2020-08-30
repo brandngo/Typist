@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.brandonngo.typist.controllers.UsernameDialogController">
+   <children>
+      <Text id="tTitle" fx:id="tTitle" layoutX="17.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose your username:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField id="tfUsername" fx:id="tfUsername" layoutX="17.0" layoutY="47.0" prefHeight="33.0" prefWidth="267.0" />
+   </children>
+</Pane>
